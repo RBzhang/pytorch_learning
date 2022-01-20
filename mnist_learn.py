@@ -1,4 +1,4 @@
-from pickletools import optimize
+#from pickletools import optimize
 import numpy as np
 import matplotlib.pyplot as plt
 import torch
@@ -70,6 +70,6 @@ def test():
             correct += (predicted == labels).sum().item()
     print('Accuracy on testt set: %d %%'  %  (100 * correct / total))
 if __name__ == '__main__':
-    for epoch in range(10):
+    for epoch in range(20):
         train(epoch)
         test()
